@@ -145,7 +145,51 @@
     });
   }
 
+  $('.partner-carousel').owlCarousel({
+    loop:true,
+	autoplay:true,
+	autoplayTimeout:3000,
+    margin:20,
+	dots:false,
+	nav: false,
 
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:2
+        },
+		1000:{
+            items:4
+        },
+        1200:{
+            items:6
+        }
+    }
+});
+	// owl carousel 
+	$('.banner-carousel').owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: true,
+		navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>',
+        ],
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 1
+			},
+			1000: {
+				items: 1
+			}
+		}
+	});
 
 
 })(window.jQuery);
